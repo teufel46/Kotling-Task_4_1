@@ -160,10 +160,10 @@ class MainKtTest {
     }
 
     @Test
-    fun calcCommission_TypeDefaultType() {
+    fun calcCommission_DefaultType() {
         val amountOfPreviousPurchases = 100_000_00
         val amountTransfer = 100_00
-        val expectedResult = 10000
+        val expectedResult = 0
 
         val result = calcCommission(amountOfPreviousPurchases = amountOfPreviousPurchases, amountTransfer = amountTransfer)
 
