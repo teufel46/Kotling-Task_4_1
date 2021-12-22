@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.5.10"
+    jacoco
     application
 }
 
@@ -13,7 +14,10 @@ repositories {
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation("junit:junit:4.13.2")
+
 }
 
 tasks.test {
